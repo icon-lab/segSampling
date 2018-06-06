@@ -2,7 +2,7 @@
 
 This is a collection of Matlab functions and demos to demonstrate the techniques described in the following paper:
 
-Biyik E, Ilicak E, Çukur T. Reconstruction by calibration over tensors for multi‐coil multi‐acquisition balanced SSFP imaging. Magn Reson Med 2017. doi: 10.1002/mrm.26902.
+Senel LK, Kilic T, Gungor A, Kopanoglu E, Guven HE, Saritas EU, Koc A, Çukur T. Statistically segregated k-space sampling for accelerating multiple-acquisition MRI. arXiv:1710.00532, 2017.
 
 You are encouraged to modify/distribute this code. However, please acknowledge this code and cite the paper appropriately.
 This code utilizes and requires SPIRiT library.
@@ -10,9 +10,12 @@ This code utilizes and requires SPIRiT library.
 
 ## Demos
 ```matlab
-	demo_ReCat.m : Demonstrates the LSQR implementation of ReCat.
+	demo_segsampling_in_vivo_T2_PE.m : Demonstrates segregated sampling on an in vivo T2-weighted dataset.
+        demo_segsampling_in_vivo_bSSFP_PE.m : Demonstrates segregated sampling on in vivo phase-cycled bSSFP datasets.
+	demo_segsampling_phantom_T1_ZF.m : Demonstrates segregated sampling on a phantom T1-weighted dataset.
+	demo_segsampling_phantom_T2_PE.m : Demonstrates segregated sampling on phantom phase-cycled bSSFP datasets.
 
-	demo_MLCC.m  : Demonstrates multi-linear coil compression in comparison to geometric decomposition coil compression (Zhang et. al, "Coil Compression for Accelerated Imaging with Cartesian Sampling").
+   note: Please run setPath.m prior to the demo scripts.
 ```
 
 For any questions, comments and contributions, please contact
